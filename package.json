@@ -1,0 +1,22 @@
+{
+  "name": "designpatterns-ts",
+  "version": "1.0.0",
+  "description": "Solucionan problemas de instancia o creación de objeto",
+  "main": "index.js",
+  "scripts": {
+    "test-singleton": "jest creational/singleton --watch",
+    "test-factory": "jest creational/factory --watch",
+    "test-abstract-factory": "jest creational/abstract-factory --watch",
+    "test": "jest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.7",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
