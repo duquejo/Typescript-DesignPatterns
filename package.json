@@ -10,6 +10,9 @@
     "test-adapter": "jest structural/adapter --watch",
     "test-decorator": "jest structural/decorator --watch",
     "test-proxy": "jest structural/proxy --watch",
+    "test-command": "jest behavioral/command --watch",
+    "test-observer": "jest behavioral/observer --watch",
+    "test-strategy": "jest behavioral/strategy --watch",
     "test": "jest --watch"
   },
   "keywords": [],
