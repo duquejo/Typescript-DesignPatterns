@@ -7,6 +7,9 @@
     "test-singleton": "jest creational/singleton --watch",
     "test-factory": "jest creational/factory --watch",
     "test-abstract-factory": "jest creational/abstract-factory --watch",
+    "test-adapter": "jest structural/adapter --watch",
+    "test-decorator": "jest structural/decorator --watch",
+    "test-proxy": "jest structural/proxy --watch",
     "test": "jest --watch"
   },
   "keywords": [],

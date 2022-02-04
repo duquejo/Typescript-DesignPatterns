@@ -29,8 +29,23 @@ Solucionan problemas de instancia o creación de objeto
 Solucionan problemas de relación de una clase con otra
 
 - Adapter
+  - Permite solucionar incompatibilidad entre clases
+  - Ejemplo:
+    - Tenemos código legacy que tiene una funcionalidad en particular. (Un publicador de Facebook) El requerimiento exige que ahora se agregarán otros proveedores como Slack y etc..
+    - La clase a adaptar debe implementar una interfaz, y todo se resuelve de manera polifórmica a través de la interfaz.
+    - No se puede refactorizar, debido a que ya está en producción y las nuevas librerías a agregar no son modificables, ambas deben adaptarse.
 - Decorator
+  - Permite agregar comportamiento sin alterar su estructura, todo en tiempo de ejecución.
+  - Si se piensa por capas, cada capa añadida extra da funcionalidades diferentes, pero no modifica la esencia del mismo
+    - Al anidar los decoradores, serán ejecutados en orden de pila, es decir, primero el último y así sucesivamente.
+  - Ejemplo:
+    - Una tienda de música da descuentos de acurdo a la primera compra del usuario, con base al cliente y a la campaña actual. Posiblemente una estructura de condicionales puede solucionarlo, pero y ¿si se agregan N cantidad de descuentos?.
+    - Este patrón también aplica para combinaciones entre comportamiento de clases.
 - Proxy
+  - Trabaja como intermediario para cambiar el comportamiento de una clase sin cambiar su estructura. Con esto evitamos que el comportamiento original sea alterado.
+  - Ejemplo:
+    - Un sitio web tiene un flujo de visitas muy grande y debido al alto flujo, el proveedor de servicio puede generar delays o sanciones debido a que no es capaz de soportar tanto.
+      - La solución entonces sería crear un proxy que se conecte a este recurso del sitio web y almacene todo en caché local para su uso posterior.
 
 ### Patrones de comportamiento
 
